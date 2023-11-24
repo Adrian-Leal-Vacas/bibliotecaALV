@@ -1,0 +1,418 @@
+/*Importaciones*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap');
+/* Estilos generales */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+}
+
+nav {
+    background-color: #444;
+    padding: 10px;
+    text-align: center;
+    height: 100vh;
+    /* Ocupa toda la altura de la página */
+    width: 200px;
+    /* Ancho del nav */
+    position: fixed;
+    /* Fijar el nav en la posición izquierda */
+    left: 0;
+    /* Alinear a la izquierda */
+    top: 0;
+    /* Alinear en la parte superior */
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    margin: 10px;
+    display: block;
+    /* Hacer que los enlaces ocupen todo el ancho del nav */
+}
+
+/* Estilo para la tabla */
+.fondoTabla {
+    position: fixed;
+    top: 5%;
+    left: 280px;
+    width: 79.5%;
+    height: 72%;
+    background-color: #fff;
+    padding: 0;
+    margin: 6% auto 20px auto;
+    /* Alto derecha abajo izquierda*/
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    /* Aplicamos flex a los elementos internos */
+    align-items: center;
+    /* Centramos horizontalmente los elementos */
+    justify-content: center;
+    /* Centramos verticalmente los elementos */
+
+    table {
+        width: 97%;
+        border-collapse: collapse;
+        margin: 20px;
+        font-family: 'Helvetica Neue', sans-serif;
+        border-radius: 15px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        text-align: center;
+        background: #f1f1f1;
+        position: absolute;
+        top: 0;
+    }
+    
+    caption{
+        font-size: 35px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        font-family: 'Petit Formal Script', cursive;
+        color: #444;
+    }
+    
+    /* Estilo para las celdas encabezado (cabecera) */
+    th {
+        /*font-family: 'Bebas Neue', sans-serif;*/
+        font-family: 'Dancing Script';
+        background: #444;
+        font-size: 25px;
+        color: #f1f1f1;
+        font-weight: bold;
+        padding: 20px;
+        border-radius: 15px 15px 0 0;
+    }
+    
+    /* Estilo para las celdas de datos */
+    td {
+        padding: 15px;
+        border: 1px solid #dcdcdc;
+        background: #f9f9f9;
+        color: #333;
+        border-radius: 0 0 15px 15px;
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Estilo para las filas impares */
+    tr:nth-child(odd) {
+        background: #e5e5e5;
+    }
+    
+    /* Estilo para las filas pares */
+    tr:nth-child(even) {
+        background: #d9d9d9;
+    }
+    
+    /* Estilo para el botón Alquilar */
+    .alquilar-button {
+        text-transform: uppercase;
+        background: #333;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 15px;
+        cursor: pointer;
+    }
+    
+    a {
+        text-transform: uppercase;
+        background: #333;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 15px;
+        cursor: pointer;
+        margin-left: 10px;
+    }
+}
+
+table {
+    width: 97%;
+    border-collapse: collapse;
+    margin: 20px;
+    font-family: 'Helvetica Neue', sans-serif;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    background: #f1f1f1;
+}
+
+caption{
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: 'Petit Formal Script', cursive;
+    color: #444;
+}
+
+/* Estilo para las celdas encabezado (cabecera) */
+th {
+    /*font-family: 'Bebas Neue', sans-serif;*/
+    font-family: 'Dancing Script';
+    background: #444;
+    font-size: 25px;
+    color: #f1f1f1;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 15px 15px 0 0;
+}
+
+/* Estilo para las celdas de datos */
+td {
+    padding: 15px;
+    border: 1px solid #dcdcdc;
+    background: #f9f9f9;
+    color: #333;
+    border-radius: 0 0 15px 15px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para las filas impares */
+tr:nth-child(odd) {
+    background: #e5e5e5;
+}
+
+/* Estilo para las filas pares */
+tr:nth-child(even) {
+    background: #d9d9d9;
+}
+
+/* Estilo para el botón Alquilar */
+.alquilar-button {
+    text-transform: uppercase;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+a {
+    text-transform: uppercase;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+/*Section*/
+section, .login, .adminBuscar, .ampliado {
+    width: 40%;
+    background-color: #fff;
+    padding: 20px;
+    margin: 6% auto 20px auto;
+    /* Alto derecha abajo izquierda*/
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    /* Aplicamos flex a los elementos internos */
+    align-items: center;
+    /* Centramos horizontalmente los elementos */
+    justify-content: center;
+    /* Centramos verticalmente los elementos */
+}
+.login {
+    width: 30%;
+}
+.ampliado {
+    width: 60%;
+}
+.datos{
+    width: auto;
+    background-color: #fff;
+    padding: 20px;
+    margin: 6% auto 20px auto;
+    /* Alto derecha abajo izquierda*/
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    /* Centramos horizontalmente los elementos */
+    justify-content: space-between;
+    /* Centramos verticalmente los elementos */
+    h3{
+        padding-bottom: 10px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+}
+.cambiarDatos{
+    width: auto;
+    background-color: #fff;
+    padding: 20px;
+    margin: 6% auto 20px auto;
+    /* Alto derecha abajo izquierda*/
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    /* Centramos horizontalmente los elementos */
+    justify-content: space-between;
+    /* Centramos verticalmente los elementos */
+    h3{
+        padding-bottom: 10px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+}
+.librosPrestamoUser{
+    width: auto;
+    background-color: #fff;
+    padding: 20px;
+    margin: 6% auto 20px auto;
+    /* Alto derecha abajo izquierda*/
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    /* Centramos horizontalmente los elementos */
+    justify-content: space-between;
+    /* Centramos verticalmente los elementos */
+}
+
+.titleNav,
+.titleHeader {
+    margin-top: 10px;
+    font-family: 'Clicker Script', cursive;
+    color: #ccc;
+}
+
+.login-title {
+    font-size: 24px;
+    /* Tamaño de fuente */
+    color: #333;
+    /* Color del texto */
+    text-align: center;
+    /* Alineación del texto al centro */
+    margin-bottom: 20px;
+    /* Espacio inferior */
+    text-transform: uppercase;
+    /* Convierte el texto en mayúsculas */
+    letter-spacing: 2px;
+    /* Espaciado entre letras */
+    font-weight: bold;
+    /* Peso de la fuente en negrita */
+}
+
+/* Estilos para los mensajes de error */
+.error-message {
+    color: #ff0000;
+    font-weight: bold;
+}
+
+/* Estilos para el formulario */
+form {
+    text-align: center;
+}
+
+.obligatorio {
+    color: #ff0000;
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 80%;
+    padding: 8px;
+    margin-bottom: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.boton-extras {
+    font-size: 14px;
+}
+
+input[type="submit"],
+.boton-extras {
+    background-color: #333;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover,
+.boton-extras:hover {
+    background-color: #555;
+}
+input[type="submit"]{
+    margin-top: 10px;
+}
+/* Estilos para el footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+    /* Empuja el footer hacia la parte inferior */
+}
+
+/* Media query para pantallas de 600px o menos */
+@media (max-width: 600px) {
+    section {
+        width: 80%;
+        /* Cambia el ancho del section para pantallas pequeñas */
+        margin: 20px auto;
+        /* Ajusta el margen para pantallas pequeñas */
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        width: 100%;
+    }
+
+    nav {
+        width: auto;
+        /* Ajusta el ancho del nav para ocupar todo el ancho */
+        height: auto;
+        /* Altura automática para mostrar contenido verticalmente */
+        position: static;
+        /* Elimina la posición fija */
+        text-align: center;
+        /* Alinea el texto al centro */
+    }
+
+    nav a {
+        margin: 5px 0;
+        /* Espaciado vertical entre enlaces */
+        display: inline-block;
+        /* Mostrar enlaces en línea */
+    }
+
+    nav h1 {
+        visibility: hidden;
+    }
+}
